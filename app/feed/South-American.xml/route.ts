@@ -23,14 +23,14 @@ function generateRSSFeed(recipes: any) {
   const siteURL = process.env.NEXT_PUBLIC_BASE_API_URL || "";
   const date = new Date();
   const author = {
-    name: "SavoryTouch",
-    link: "https://savorytouch.com",
+    name: "WordofMany",
+    link: "https://WordofMany.com",
   };
 
   const feed = new Feed({
-    title: "SavoryTouch",
+    title: "WordofMany",
     description:
-      "Welcome to SavoryTouch, your go-to destination for all things food and drink. Here, we celebrate the joys of culinary exploration where every dish tells a story and every flavor brings an experience to life. Whether you&apos;re a passionate home cook, a curious foodie, or someone who just loves to savor the art of dining, you&apos;ve found the perfect place.",
+      "Welcome to WordofMany, your go-to destination for all things food and drink. Here, we celebrate the joys of culinary exploration where every dish tells a story and every flavor brings an experience to life. Whether you&apos;re a passionate home cook, a curious foodie, or someone who just loves to savor the art of dining, you&apos;ve found the perfect place.",
     id: siteURL,
     link: siteURL,
     image: `${siteURL}/opengraph-image.png`,

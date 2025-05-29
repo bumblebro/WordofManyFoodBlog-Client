@@ -32,142 +32,181 @@ const freight = localFont({
 // Category data with images and theme colors
 const categories = [
   {
-    title: "Cuisine Types",
+    title: "Grilling Recipes",
+    items: ["Summer-Grilling", "BBQ-Classics"],
+    image:
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Discover delicious grilling recipes for every occasion",
+  },
+  {
+    title: "Summer Recipes",
     items: [
-      "Italian",
-      "Mexican",
-      "Asian",
-      "Mediterranean",
-      "American",
-      "Indian",
-      "French",
-      "Japanese",
-      "Greek",
-      "Spanish",
+      "Cold-Pasta-Salad-Recipes",
+      "Summer-Lunch-Ideas",
+      "Summer-Salads-and-Sides",
+      "Healthy-Summer-Dinners",
+      "Quick-Summer-Meals",
+      "Easy-Summer-Desserts",
+      "Summer-Breakfast-Ideas",
+      "Summer-Snacks-for-Kids",
     ],
     image:
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070",
     color: "bg-[#8D6271]",
     hoverColor: "hover:bg-[#7A5260]",
-    description: "Explore authentic recipes from around the world",
+    description: "Fresh and vibrant recipes perfect for summer",
   },
   {
-    title: "Meal Types",
-    items: ["Breakfast", "Lunch", "Dinner", "Snacks", "Desserts", "Brunch"],
-    image:
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080",
-    color: "bg-[#8D6271]",
-    hoverColor: "hover:bg-[#7A5260]",
-    description: "Find the perfect recipe for any time of day",
-  },
-  {
-    title: "Dietary Preferences",
+    title: "Rhubarb Recipes",
     items: [
-      "Vegetarian",
-      "Vegan",
-      "Gluten-Free",
-      "Keto",
-      "Paleo",
-      "Low-Carb",
-      "Dairy-Free",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1974",
-    color: "bg-[#8D6271]",
-    hoverColor: "hover:bg-[#7A5260]",
-    description: "Recipes tailored to your dietary needs",
-  },
-  {
-    title: "Cooking Techniques",
-    items: [
-      "Baking",
-      "Grilling",
-      "Roasting",
-      "Sautéing",
-      "Boiling",
-      "Steaming",
-      "Frying",
-      "Smoking",
+      "Rhubarb-Desserts",
+      "Rhubarb-Sauces-and-Jams",
+      "Rhubarb-Baked-Goods",
     ],
     image:
       "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1964",
     color: "bg-[#8D6271]",
     hoverColor: "hover:bg-[#7A5260]",
-    description: "Master different cooking methods",
+    description: "Explore sweet and tangy rhubarb creations",
   },
   {
-    title: "Ingredients",
-    items: ["Fruits", "Vegetables", "Proteins", "Grains", "Spices-and-Herbs"],
-    image:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974",
-    color: "bg-[#8D6271]",
-    hoverColor: "hover:bg-[#7A5260]",
-    description: "Browse recipes by main ingredients",
-  },
-  {
-    title: "Recipe Formats",
+    title: "Strawberry Recipes",
     items: [
-      "Quick-Meals",
-      "Slow-Cooker",
-      "Instant-Pot",
-      "Batch-Cooking",
-      "No-Cook",
-      "One-Bowl-Meals",
-      "Kid-Friendly",
+      "Strawberry-Desserts",
+      "Strawberry-Breakfast-and-Drinks",
+      "Strawberry-Salads",
     ],
     image:
-      "https://images.unsplash.com/photo-1495521821757-a1efb6729352?q=80&w=2070",
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080",
     color: "bg-[#8D6271]",
     hoverColor: "hover:bg-[#7A5260]",
-    description: "Find recipes that fit your cooking style",
+    description: "Sweet and refreshing strawberry delights",
   },
   {
-    title: "Modern Trends",
-    items: [
-      "Plant-Based",
-      "Fusion-Cuisine",
-      "Healthy-Swaps",
-      "Fermented-Foods",
-      "Zero-Waste-Cooking",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070",
-    color: "bg-[#8D6271]",
-    hoverColor: "hover:bg-[#7A5260]",
-    description: "Stay up to date with food trends",
-  },
-  {
-    title: "Seasonal Recipes",
-    items: ["Spring", "Summer", "Fall", "Winter", "Holiday"],
-    image:
-      "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?q=80&w=1974",
-    color: "bg-[#8D6271]",
-    hoverColor: "hover:bg-[#7A5260]",
-    description: "Recipes for every season",
-  },
-  {
-    title: "Global Flavors",
-    items: [
-      "Middle-Eastern",
-      "South-American",
-      "African",
-      "Caribbean",
-      "Nordic",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981",
-    color: "bg-[#8D6271]",
-    hoverColor: "hover:bg-[#7A5260]",
-    description: "Discover international cuisines",
-  },
-  {
-    title: "Special Occasions",
-    items: ["Birthday", "Anniversary", "Picnic", "Potluck", "Game-Day"],
+    title: "Holiday and Occasion",
+    items: ["Memorial-Day", "Graduation", "Father's-Day"],
     image:
       "https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=2080",
     color: "bg-[#8D6271]",
     hoverColor: "hover:bg-[#7A5260]",
-    description: "Perfect recipes for celebrations",
+    description: "Special recipes for celebrations and holidays",
+  },
+  {
+    title: "Specialty and Seasonal",
+    items: ["Healthy-Eating", "Cultural-Favorites", "Cool-Drinks"],
+    image:
+      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Unique and seasonal culinary experiences",
+  },
+  {
+    title: "Popular Categories",
+    items: [
+      "Dinner-Ideas",
+      "Lunch-Ideas",
+      "Breakfast-Ideas",
+      "Desserts-and-Cookies",
+      "Pasta-and-Soups",
+      "Crockpot-and-Camping",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Browse our most popular recipe collections",
+  },
+  {
+    title: "Desserts",
+    items: ["Fruit-Based-Desserts", "Frozen-Desserts", "Baked-Desserts"],
+    image:
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1974",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Sweet treats for every occasion",
+  },
+  {
+    title: "Special Diet",
+    items: ["Vegan-Recipes", "Gluten-Free", "Keto-and-Low-Carb"],
+    image:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Recipes for specific dietary needs",
+  },
+  {
+    title: "World Cuisine",
+    items: ["Asian-Food", "Mexican-Food", "Italian-Food"],
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Explore global culinary traditions",
+  },
+  {
+    title: "Fruit",
+    items: ["Summer-Fruits", "Baked-Fruit"],
+    image:
+      "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=2070",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Fresh and creative fruit recipes",
+  },
+  {
+    title: "Drinks",
+    items: ["Mocktails", "Smoothies", "Coffee-and-Tea"],
+    image:
+      "https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1975",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Refreshing beverages for any time",
+  },
+  {
+    title: "Cake",
+    items: ["Layer-Cakes", "Single-Serve"],
+    image:
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1989",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Delicious cake recipes for every occasion",
+  },
+  {
+    title: "Dairy",
+    items: ["Cheese-Based", "Milk-and-Yogurt"],
+    image:
+      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=2073",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Creamy and delicious dairy recipes",
+  },
+  {
+    title: "Vegetables",
+    items: ["Roasted-Vegetables", "Vegetable-Mains"],
+    image:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Fresh and flavorful vegetable dishes",
+  },
+  {
+    title: "Meat",
+    items: ["Beef-Recipes", "Chicken-Recipes", "Pork-Recipes"],
+    image:
+      "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Satisfying meat-based recipes",
+  },
+  {
+    title: "Healthy Recipes",
+    items: ["Low-Calorie-Meals", "High-Protein-Recipes", "Meal-Prep"],
+    image:
+      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053",
+    color: "bg-[#8D6271]",
+    hoverColor: "hover:bg-[#7A5260]",
+    description: "Nutritious and balanced meal options",
   },
 ];
 

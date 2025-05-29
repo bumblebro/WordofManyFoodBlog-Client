@@ -274,7 +274,7 @@ function Navbar({
               <h1
                 className={`uppercase font-[650] tracking-[4px] text-3xl   lg:text-[1.7rem] xl:text-[1.7rem] text-center text-[#000000] ${freightbig.className}`}
               >
-                SavoryTouch
+                WordofMany
               </h1>
             </Link>
           </div>

@@ -41,7 +41,6 @@ function timeToISO8601Duration(seconds: number) {
   return duration;
 }
 
-
 export default function StructuredData({
   post,
   recipeDetails,
@@ -55,22 +54,22 @@ export default function StructuredData({
     "@type": "WebSite",
     "@id": `${siteURL}#website`,
     url: siteURL,
-    name: "SavoryTouch",
+    name: "WordofMany",
     description:
       "Your ultimate destination for food recipes and cooking inspiration",
     publisher: {
       "@type": "Organization",
       "@id": `${siteURL}#organization`,
-      name: "SavoryTouch",
+      name: "WordofMany",
       logo: {
         "@type": "ImageObject",
         url: `${siteURL}/favicon.ico`,
       },
       sameAs: [
-        "https://www.facebook.com/savorytouch",
-        "https://www.instagram.com/savorytouch",
-        "https://www.pinterest.com/savorytouch",
-        "https://twitter.com/savorytouch",
+        "https://www.facebook.com/WordofMany",
+        "https://www.instagram.com/WordofMany",
+        "https://www.pinterest.com/WordofMany",
+        "https://twitter.com/WordofMany",
       ],
     },
   };
@@ -183,7 +182,7 @@ export default function StructuredData({
     publisher: {
       "@type": "Organization",
       "@id": `${siteURL}#organization`,
-      name: "SavoryTouch",
+      name: "WordofMany",
       logo: {
         "@type": "ImageObject",
         url: `${siteURL}/favicon.ico`,
@@ -248,7 +247,7 @@ export default function StructuredData({
     },
     author: {
       "@type": "Person",
-      name: "SavoryTouch Community",
+      name: "WordofMany Community",
     },
     datePublished: post.creationDate,
     reviewBody: `This ${DeSlugify(

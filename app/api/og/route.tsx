@@ -149,7 +149,7 @@ export async function GET(req: NextRequest) {
           fontFamily: "source-sans-pro.extralight",
         }}
       >
-        savorytouch.com
+        WordofMany.com
       </div>
       <div
         style={{
@@ -269,7 +269,7 @@ export async function GET(req: NextRequest) {
               fontFamily: "source-sans-pro.extralight",
             }}
           >
-            savorytouch.com
+            WordofMany.com
           </div>
         </div>
       </div>
@@ -446,7 +446,7 @@ export async function GET(req: NextRequest) {
     //         letterSpacing: "0.5px",
     //       }}
     //     >
-    //       savorytouch.com
+    //       WordofMany.com
     //     </div>
     //   </div>
     //   {/* Bottom food image band */}
@@ -874,7 +874,7 @@ export async function GET(req: NextRequest) {
             display: "block",
           }}
         >
-          savorytouch.com
+          WordofMany.com
         </div> */}
       </div>
       {/* Bottom food image band */}
@@ -988,7 +988,7 @@ export async function GET(req: NextRequest) {
           display: "block",
         }}
       >
-        savorytouch.com
+        WordofMany.com
       </div>
     </div>,
     // New template inspired by Butter Chicken reference
@@ -1105,7 +1105,7 @@ export async function GET(req: NextRequest) {
           display: "block",
         }}
       >
-        savorytouch.com
+        WordofMany.com
       </div>
     </div>,
     // New template inspired by Mongolian Chicken reference
@@ -1179,7 +1179,7 @@ export async function GET(req: NextRequest) {
             letterSpacing: "1px",
           }}
         >
-          www.savorytouch.com
+          www.WordofMany.com
         </div>
         {/* Decorative lines */}
         <div
@@ -1300,7 +1300,7 @@ export async function GET(req: NextRequest) {
           zIndex: 3,
         }}
       >
-        www.savorytouch.com
+        www.WordofMany.com
       </div>
     </div>,
     // New template inspired by Szechuan Chicken reference
@@ -1399,7 +1399,7 @@ export async function GET(req: NextRequest) {
           display: "block",
         }}
       >
-        www.savorytouch.com
+        www.WordofMany.com
       </div>
     </div>,
     // New template inspired by Crispy Honey Chilli Chicken reference
@@ -1525,7 +1525,7 @@ export async function GET(req: NextRequest) {
           zIndex: 3,
         }}
       >
-        www.savorytouch.com
+        www.WordofMany.com
       </div>
     </div>,
   ];

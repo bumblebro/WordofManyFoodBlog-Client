@@ -16,11 +16,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_API_URL}`),
   title: {
-    default: "Savory Touch",
-    template: "%s | Savory Touch",
+    default: "WordofMany",
+    template: "%s | WordofMany",
   },
   description:
-    "Discover SavoryTouch, your go-to platform for the latest trends in food and drink. Explore a world of culinary delights and beverage innovations from around the globe.",
+    "Discover WordofMany, your go-to platform for the latest trends in food and drink. Explore a world of culinary delights and beverage innovations from around the globe.",
   twitter: {
     card: "summary_large_image",
   },

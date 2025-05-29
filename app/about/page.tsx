@@ -45,11 +45,11 @@ function page() {
           <h1
             className={`text-3xl font-extrabold pb-6 ${Poppins700.className}`}
           >
-            About Savory Touch
+            About WordofMany
           </h1>
           <p className="mb-4">By Shreyas M S</p>
           <p className="mb-4">
-            Hey there, food lover! Welcome to <strong>Savory Touch</strong>, a
+            Hey there, food lover! Welcome to <strong>WordofMany</strong>, a
             personal project crafted with love, passion, and a pinch of spice.
           </p>
           <p className="mb-4">
@@ -60,7 +60,7 @@ function page() {
             ALL THE RECIPES YOU&rsquo;LL EVER NEED. PERIOD.
           </h2>
           <p className="mb-4">
-            Savory Touch is my personal space where I share tried-and-tested
+            WordofMany is my personal space where I share tried-and-tested
             recipes, flavorful ideas, and a taste of my kitchen experiments.
             Here&rsquo;s what you can expect:
           </p>
@@ -76,8 +76,8 @@ function page() {
           </ul>
           <p className="mb-4">
             Whether you&rsquo;re a beginner in the kitchen or someone who enjoys
-            experimenting with flavors, Savory Touch is here to make your
-            cooking journey fun and flavorful. Explore the{" "}
+            experimenting with flavors, WordofMany is here to make your cooking
+            journey fun and flavorful. Explore the{" "}
             <strong>Recipes Section</strong> and find your next favorite dish.
           </p>
           <p className="mb-4">
@@ -91,9 +91,9 @@ function page() {
               <a
                 rel="noopener"
                 className="underline"
-                href="mailto:savorytouch13@gmail.com"
+                href="mailto:WordofMany13@gmail.com"
               >
-                savorytouch13@gmail.com
+                WordofMany13@gmail.com
               </a>
             </li>
             <li>
@@ -112,10 +112,10 @@ function page() {
               <a
                 rel="noopener"
                 className="underline"
-                href="https://in.pinterest.com/SavoryTouchBlog/"
+                href="https://in.pinterest.com/WordofManyBlog/"
                 target="_blank"
               >
-                in.pinterest.com/SavoryTouchBlog/
+                in.pinterest.com/WordofManyBlog/
               </a>
             </li>
           </ul>
@@ -128,7 +128,7 @@ function page() {
 
           {/* <Image
             src={imgurl}
-            alt="Shreyas M S - Admin of Savory Touch"
+            alt="Shreyas M S - Admin of WordofMany"
             width="200"
             height="200"
             className="my-4"
@@ -137,13 +137,13 @@ function page() {
           <div className="flex items-center gap-4">
             <div>
               {/* <p className="mb-4">
-                <strong>Shreyas M S</strong> - Founder of Savory Touch
+                <strong>Shreyas M S</strong> - Founder of WordofMany
               </p> */}
               <p className="mb-4">
                 Hi, I&rsquo;m Shreyas, a self-taught foodie and tech enthusiast.
-                I built Savory Touch to share my love for cooking with the
-                world. Every recipe here is something I&rsquo;ve personally
-                worked on, tasted, and enjoyed.
+                I built WordofMany to share my love for cooking with the world.
+                Every recipe here is something I&rsquo;ve personally worked on,
+                tasted, and enjoyed.
               </p>
               <p className="mb-4">
                 I hope this website inspires you to try something new in the

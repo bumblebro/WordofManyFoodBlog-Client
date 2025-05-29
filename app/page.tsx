@@ -57,100 +57,93 @@ export const revalidate = 86400;
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Savory Touch | The Latest in Food & Drink Delights",
+    title: "WordofMany | The Latest in Food & Drink Delights",
   };
 }
 
 const slugs = [
-  "Cuisine-Types",
-  "Meal-Types",
-  "Dietary-Preferences",
-  "Cooking-Techniques",
-  "Ingredients",
-  "Recipe-Formats",
-  "Modern-Trends",
-  "Seasonal-Recipes",
-  "Global-Flavors",
-  "Special-Occasions",
+  "Grilling-Recipes",
+  "Summer-Recipes",
+  "Rhubarb-Recipes",
+  "Strawberry-Recipes",
+  "Holiday-and-Occasion",
+  "Specialty-and-Seasonal",
+  "Popular-Categories",
+  "Desserts",
+  "Special-Diet",
+  "World-Cuisine",
+  "Fruit",
+  "Drinks",
+  "Cake",
+  "Dairy",
+  "Vegetables",
+  "Meat",
+  "Healthy-Recipes",
 ];
 
 // Featured categories with images and descriptions
 const featuredCategories = [
   {
-    title: "Cuisine Types",
-    description: "Explore authentic recipes from around the world",
+    title: "Grilling Recipes",
+    description: "Discover delicious grilling recipes for every occasion",
+    image:
+      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974",
+    link: "/grilling-recipes",
+    items: ["Summer-Grilling", "BBQ-Classics"],
+  },
+  {
+    title: "Summer Recipes",
+    description: "Fresh and vibrant recipes perfect for summer",
     image:
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070",
-    link: "/cuisine-types",
+    link: "/summer-recipes",
     items: [
-      "Italian",
-      "Mexican",
-      "Asian",
-      "Mediterranean",
-      "American",
-      "Indian",
-      "French",
-      "Japanese",
-      "Greek",
-      "Spanish",
+      "Cold-Pasta-Salad-Recipes",
+      "Summer-Lunch-Ideas",
+      "Summer-Salads-and-Sides",
+      "Healthy-Summer-Dinners",
     ],
   },
   {
-    title: "Meal Types",
-    description: "Find the perfect recipe for any time of day",
+    title: "Desserts",
+    description: "Sweet treats for every occasion",
     image:
-      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080",
-    link: "/meal-types",
-    items: ["Breakfast", "Lunch", "Dinner", "Snacks", "Desserts", "Brunch"],
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1974",
+    link: "/desserts",
+    items: ["Fruit-Based-Desserts", "Frozen-Desserts", "Baked-Desserts"],
   },
   {
-    title: "Dietary Preferences",
-    description: "Recipes tailored to your dietary needs",
+    title: "World Cuisine",
+    description: "Explore global culinary traditions",
     image:
-      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1974",
-    link: "/dietary-preferences",
-    items: [
-      "Vegetarian",
-      "Vegan",
-      "Gluten-Free",
-      "Keto",
-      "Paleo",
-      "Low-Carb",
-      "Dairy-Free",
-    ],
-  },
-  {
-    title: "Seasonal Recipes",
-    description: "Fresh recipes for every season",
-    image:
-      "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?q=80&w=1974",
-    link: "/seasonal-recipes",
-    items: ["Spring", "Summer", "Fall", "Winter", "Holiday"],
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070",
+    link: "/world-cuisine",
+    items: ["Asian-Food", "Mexican-Food", "Italian-Food"],
   },
 ];
 
 // Update the popularCategories array with correct URLs
 const popularCategories = [
   {
-    title: "Quick & Easy",
-    description: "30-minute meals and simple recipes",
-    image:
-      "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=2070",
-    link: "/Recipe-Formats/Quick-Meals",
-  },
-  {
-    title: "Healthy Options",
-    description: "Nutritious and balanced meals",
+    title: "Healthy Recipes",
+    description: "Nutritious and balanced meal options",
     image:
       "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053",
-    link: "/Modern-Trends/Healthy-Swaps",
+    link: "/healthy-recipes",
   },
   {
-    title: "Family Favorites",
-    description: "Kid-friendly and crowd-pleasing recipes",
+    title: "Special Diet",
+    description: "Recipes for specific dietary needs",
     image:
-      "https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?q=80&w=2070",
-    link: "/Recipe-Formats/Kid-Friendly",
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2080",
+    link: "/special-diet",
+  },
+  {
+    title: "Holiday & Occasion",
+    description: "Special recipes for celebrations and holidays",
+    image:
+      "https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=2080",
+    link: "/holiday-and-occasion",
   },
 ];
 
