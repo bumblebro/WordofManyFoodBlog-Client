@@ -9,7 +9,7 @@ const domain =
   process.env.NEXT_PUBLIC_BASE_API_URL?.replace(/^https:/, "http:") || "";
 
 export async function GET(request: Request, response: Response) {
-  const recipes = await GETBLOGBYSECTION({ subCategory: "Paleo" });
+  const recipes = await GETBLOGBYSECTION({ subCategory: "Summer-Grilling" });
 
   const rss = generateRSSFeed(recipes);
 
@@ -68,11 +68,31 @@ function generateRSSFeed(recipes: any) {
         name: r.subsubsection,
       };
 
+      // if (imageUrl) {
       feed.addItem({
         title: DeSlugify(r.title),
         id: url,
         link: url,
+        // description:
+        //   r.recipedescription +
+        //   "\n" +
+        //   r?.seo?.primaryKeywords
+        //     ?.map(
+        //       (keyword: string) =>
+        //         "#" +
+        //         keyword
+        //           .split(" ")
+        //           .map(
+        //             (word) =>
+        //               word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+        //           ) // Capitalize each word
+        //           .join("")
+        //     )
+        //     .join(" ") +
+        //   "\n" +
+        //   "→ Click to learn more!",
         description: r.recipedescription,
+        // content: r.recipedescription,
         author: [author],
         contributor: [author],
         date: r.creationDate,
@@ -87,6 +107,8 @@ function generateRSSFeed(recipes: any) {
         },
       });
     }
+
+    // }
   });
 
   return feed.rss2();

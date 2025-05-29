@@ -68,31 +68,11 @@ function generateRSSFeed(recipes: any) {
         name: r.subsubsection,
       };
 
-      // if (imageUrl) {
       feed.addItem({
         title: DeSlugify(r.title),
         id: url,
         link: url,
-        // description:
-        //   r.recipedescription +
-        //   "\n" +
-        //   r?.seo?.primaryKeywords
-        //     ?.map(
-        //       (keyword: string) =>
-        //         "#" +
-        //         keyword
-        //           .split(" ")
-        //           .map(
-        //             (word) =>
-        //               word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-        //           ) // Capitalize each word
-        //           .join("")
-        //     )
-        //     .join(" ") +
-        //   "\n" +
-        //   "→ Click to learn more!",
         description: r.recipedescription,
-        // content: r.recipedescription,
         author: [author],
         contributor: [author],
         date: r.creationDate,
@@ -107,8 +87,6 @@ function generateRSSFeed(recipes: any) {
         },
       });
     }
-
-    // }
   });
 
   return feed.rss2();
