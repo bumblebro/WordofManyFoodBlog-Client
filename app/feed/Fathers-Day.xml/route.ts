@@ -3,11 +3,10 @@ import { generateRSSFeed } from "@/app/utils/generateRSSFeed";
 
 export const revalidate = 0;
 
-export async function GET(request: Request) {
+export async function GET() {
   const recipes = await GETBLOGBYSECTION({ subCategory: "Father's-Day" });
-  const rss = generateRSSFeed(recipes, "Father's-Day");
-
-  return new Response(rss, {
+  const xml = generateRSSFeed(recipes, "Father's-Day");
+  return new Response(xml, {
     status: 200,
     headers: { "Content-Type": "text/xml" },
   });
