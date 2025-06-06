@@ -23,5 +23,7 @@ export default async function GETBLOGPOST({ title }: { title: string }) {
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch.");
+  } finally {
+    await prisma.$disconnect();
   }
 }

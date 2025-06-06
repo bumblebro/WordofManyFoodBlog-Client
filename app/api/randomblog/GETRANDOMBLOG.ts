@@ -45,5 +45,7 @@ export async function GETRANDOMBLOG() {
       { error: "Internal Server Error" },
       { status: 500 }
     );
+  } finally {
+    await prisma.$disconnect();
   }
 }

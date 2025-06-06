@@ -62,7 +62,7 @@ export default async function GETBLOGBYSECTION({
         recipedescription: true,
         recipedetails: true, // Recipe details for different serving sizes (1X, 2X, 3X, 4X)
         creationDate: true, // Date the blog was created
-        seo:true
+        seo: true,
       },
       where: whereClause,
       orderBy: {
@@ -80,5 +80,7 @@ export default async function GETBLOGBYSECTION({
   } catch (error) {
     console.error("Database Error:", error);
     // throw new Error("Database Error");
+  } finally {
+    await prisma.$disconnect();
   }
 }

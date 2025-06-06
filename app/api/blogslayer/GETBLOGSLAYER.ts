@@ -80,5 +80,7 @@ export default async function GETBLOGSLAYER({
   } catch (error) {
     console.error("Database Error:", error);
     // throw new Error("Database Error");
+  } finally {
+    await prisma.$disconnect();
   }
 }

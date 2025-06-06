@@ -17,5 +17,7 @@ export default async function GETBLOGALL(page = 0, pageSize = 100) {
     take: pageSize,
     // cacheStrategy: { ttl: 86400 },
   });
+    await prisma.$disconnect(); 
+  
   return blogs;
 }

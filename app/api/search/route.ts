@@ -89,5 +89,7 @@ export async function GET(request: Request) {
       { error: "Failed to perform search", results: [] },
       { status: 500 }
     );
+  } finally {
+    await prisma.$disconnect();
   }
 }

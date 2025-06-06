@@ -28,5 +28,7 @@ export default async function BLOGCOMPLETE() {
 
     // cacheStrategy: { ttl: 86400 },
   });
+    await prisma.$disconnect(); 
+  
   return blogs;
 }

@@ -24,6 +24,8 @@ export default async function GETBLOG({ pageNo }: { pageNo: string }) {
   });
 
   const totalBlogs = await prisma.foodBlogs.count();
+  await prisma.$disconnect();
+
   return {
     blogs: blogs,
     metaData: {
