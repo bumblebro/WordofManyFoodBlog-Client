@@ -77,11 +77,11 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      {/* {process.env.NODE_ENV == "production" && (
-        <GoogleAnalytics gaId="G-5RNXYBZTK0" />
-      )} */}
+      {process.env.NODE_ENV == "production" && (
+        <GoogleAnalytics gaId="G-GR0NLTCFVB" />
+      )}
 
-      <GoogleAnalytics gaId="G-GR0NLTCFVB" />
+{/*       <GoogleAnalytics gaId="G-GR0NLTCFVB" /> */}
     </html>
   );
 }
