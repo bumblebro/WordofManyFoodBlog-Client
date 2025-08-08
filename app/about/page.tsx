@@ -96,10 +96,8 @@ function page() {
                 WordofMany13@gmail.com
               </a>
             </li>
-              //   <li>
-            //   📘 <strong>Facebook:</strong>{" "}
-            //   <a
-            //     rel="noopener"
+            
+            //   <li>📘 <strong>Facebook:</strong> <a  rel="noopener"
             //     className="underline"
             //     href="https://www.facebook.com/profile.php?id=61574819005948"
             //     target="_blank"
