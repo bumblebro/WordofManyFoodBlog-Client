@@ -97,15 +97,15 @@ function page() {
               </a>
             </li>
             
-            //   <li>📘 <strong>Facebook:</strong> <a  rel="noopener"
-            //     className="underline"
-            //     href="https://www.facebook.com/profile.php?id=61574819005948"
-            //     target="_blank"
-            //   >
-            //     facebook.com/profile.php?id=61574819005948
-            //   </a>
-            // </li>
-            <li>
+              {/* <li>📘 <strong>Facebook:</strong> <a  rel="noopener"
+                 className="underline"
+          href="https://www.facebook.com/profile.php?id=61574819005948"
+               target="_blank"
+          >
+              facebook.com/profile.php?id=61574819005948
+           </a>
+         </li> */}
+            <li> 
               📌 <strong>Pinterest:</strong>{" "}
               <a
                 rel="noopener"
