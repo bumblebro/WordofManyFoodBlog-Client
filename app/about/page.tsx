@@ -96,7 +96,7 @@ function page() {
                 WordofMany13@gmail.com
               </a>
             </li>
-            <li>
+            {*   <li>
               📘 <strong>Facebook:</strong>{" "}
               <a
                 rel="noopener"
@@ -107,6 +107,7 @@ function page() {
                 facebook.com/profile.php?id=61574819005948
               </a>
             </li>
+            *}
             <li>
               📌 <strong>Pinterest:</strong>{" "}
               <a
