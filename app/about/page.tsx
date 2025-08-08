@@ -113,7 +113,7 @@ function page() {
               <a
                 rel="noopener"
                 className="underline"
-                href="https://in.pinterest.com/WordofManyBlog/"
+                href="https://in.pinterest.com/WordofMany/"
                 target="_blank"
               >
                 in.pinterest.com/WordofManyBlog/
