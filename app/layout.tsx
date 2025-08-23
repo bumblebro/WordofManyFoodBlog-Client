@@ -46,7 +46,7 @@ export default function RootLayout({
             strategy="afterInteractive"
           ></Script>
         )} */}
-        {/* <AdsenseScript /> */}
+       <AdsenseScript /> 
         {/* <script
           data-grow-initializer=""
           dangerouslySetInnerHTML={{

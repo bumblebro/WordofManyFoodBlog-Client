@@ -28,6 +28,9 @@ import SideAdComponent3 from "../SideAdComponent3";
 import InternalLinking from "../InternalLinking/InternalLinking";
 import { PinterestIcon, PinterestShareButton } from "react-share";
 import PinComponent from "../PinComponent";
+import { DisplayAdUnit } from "../Ads/ad-unit";
+import AdContainerForDesktop from "../Ads/AdContainerForDesktop";
+import AdContainerForMobile from "../Ads/AdContainerForMobile";
 // import GoogleAdUnit from "../GoogleAdUnit";
 // Poppins
 const Poppins700 = Poppins({
@@ -377,7 +380,7 @@ function BlogDisplay({ decodedslug, currentPost, posts, latposts }: BlogDisp) {
             }
             description={currentPost.recipedescription}
           /> */}
-          {/* <DisplayAdUnit format="auto" /> */}
+          <DisplayAdUnit format="auto" />
           {currentPost.content?.map((item, i) => {
             const contentItem = item as ContentItem;
             return (
@@ -448,8 +451,8 @@ function BlogDisplay({ decodedslug, currentPost, posts, latposts }: BlogDisp) {
             );
           })}{" "}
           {/* <DisplayAdUnit format="auto" /> */}
-          {/* <AdContainerForDesktop />
-          <AdContainerForMobile /> */}
+          <AdContainerForDesktop />
+          <AdContainerForMobile />
           {currentPost.equipments && currentPost.equipments.length > 0 && (
             <div className="px-6 py-5 bg-white   my-10 border-black border-2 mx-2 md:mx-0 flex flex-col lg:flex-row justify-between items-start lg:items-center">
               <div className="my-auto">
@@ -466,14 +469,14 @@ function BlogDisplay({ decodedslug, currentPost, posts, latposts }: BlogDisp) {
                   ))}
                 </ul>
               </div>
-              {/* <AdContainerForDesktop /> */}
+              <AdContainerForDesktop />
             </div>
           )}
           {/* <DisplayAdUnit format="auto" /> */}
           {currentPost.faq && (currentPost.faq as any[]).length > 0 && (
             <FAQSection title={currentPost.title} faqs={currentPost.faq} />
           )}
-          {/* <DisplayAdUnit format="auto" /> */}
+          <DisplayAdUnit format="auto" />
           {/* <AdCode>
             {" "}
             <ins
@@ -489,8 +492,8 @@ function BlogDisplay({ decodedslug, currentPost, posts, latposts }: BlogDisp) {
           {/* <GoogleAdPcItem key={2 + "ads"} adId={`ad-slot-${2}`} /> */}
           {/* <AdContainerForMobile /> */}
           {/* <DisplayAdUnit format="auto" /> */}
-          {/* <AdContainerForDesktop /> */}
-          {/* <AdContainerForMobile /> */}
+          <AdContainerForDesktop />
+          <AdContainerForMobile />
           <RecipePage currentPost={currentPost} />
           <InternalLinking
             currentPost={currentPost}
@@ -553,8 +556,8 @@ function BlogDisplay({ decodedslug, currentPost, posts, latposts }: BlogDisp) {
             ))}
           </div>{" "}
         </div>{" "}
-        {/* <AdContainerForDesktop /> */}
-        {/* <AdContainerForMobile /> */}
+        <AdContainerForDesktop />
+        <AdContainerForMobile />
       </div>
       {/* --- Sideeeeee one */}
       <div className="py-8 px-4 md:bg-[#ffffff] xl:pr-0 h-full">

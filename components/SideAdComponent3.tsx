@@ -139,6 +139,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import AdContainerForDesktop from "./Ads/AdContainerForDesktop";
 // import { MediumRectangleAdUnit } from "./Ads/ad-unit";
 // import AdContainerForDesktop from "./Ads/AdContainerForDesktop";
 
@@ -210,7 +211,7 @@ export default function SideAdComponent3() {
               className="w-full h-full flex items-center justify-center text-xl font-semibold"
             >
               {/* <MediumRectangleAdUnit /> */}
-              {/* <AdContainerForDesktop />{" "} */}
+              <AdContainerForDesktop />
             </motion.div>
           </AnimatePresence>
         </div>

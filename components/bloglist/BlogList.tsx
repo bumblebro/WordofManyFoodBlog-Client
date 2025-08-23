@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
+import { DisplayAdUnit } from "../Ads/ad-unit";
 // import { DisplayAdUnit, InFeedAdUnit } from "../Ads/ad-unit";
 // Poppins
 const Poppins700 = Poppins({
@@ -38,7 +39,7 @@ interface posts {
 function BlogList({ posts }: posts) {
   return (
     <div className="mx-auto mb-10 w-full px-4">
-      {/* <DisplayAdUnit format="auto" className="mx-auto w-full" /> */}
+      <DisplayAdUnit format="auto" className="mx-auto w-full" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:max-w-[73rem] mx-auto w-full">
         {/* <InFeedAdUnit

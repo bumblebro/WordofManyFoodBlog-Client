@@ -6,6 +6,8 @@ import { useState, useRef, useEffect } from "react";
 import localFont from "next/font/local";
 
 import { Poppins } from "next/font/google";
+import AdContainerForDesktop from "./Ads/AdContainerForDesktop";
+import AdContainerForMobile from "./Ads/AdContainerForMobile";
 // import AdCode from "./AdCode";
 // import { DisplayAdUnit, MediumRectangleAdUnit } from "./Ads/ad-unit";
 // import AdContainerForDesktop from "./Ads/AdContainerForDesktop";
@@ -206,7 +208,7 @@ const RecipePage = ({ currentPost }: any) => {
             15 min
           </time> */}
           </div>
-          {/* <AdContainerForDesktop /> */}
+          <AdContainerForDesktop />
         </div>
 
         {/* Ingredients */}
@@ -222,7 +224,7 @@ const RecipePage = ({ currentPost }: any) => {
             ))}
           </ul>
         </div> */}
-        {/* <AdContainerForMobile /> */}
+        <AdContainerForMobile />
 
         <div className="mx-4  p-2 sm:p-6  shadow-md border border-gray-300  flex flex-col lg:flex-row justify-between items-start lg:items-center my-12 ">
           <div className="my-auto">
@@ -259,10 +261,10 @@ const RecipePage = ({ currentPost }: any) => {
               )}
             </ul>
           </div>
-          {/* <AdContainerForDesktop /> */}
+          <AdContainerForDesktop />
         </div>
         {/* <DisplayAdUnit format="auto" /> */}
-        {/* <AdContainerForMobile /> */}
+        <AdContainerForMobile />
 
         {/* Instructions */}
         <div className="mx-4  p-2 sm:p-6  shadow-md border border-gray-300  my-12">
@@ -284,7 +286,7 @@ const RecipePage = ({ currentPost }: any) => {
           </ol>
         </div>
         {/* Notes */}
-        {/* <AdContainerForMobile /> */}
+        <AdContainerForMobile />
 
         <div className="mx-4  p-2 sm:p-6  shadow-md border border-gray-300  my-12 flex flex-col lg:flex-row justify-between items-start lg:items-center">
           <div className="my-auto">
@@ -301,10 +303,10 @@ const RecipePage = ({ currentPost }: any) => {
               ))}
             </ul>
           </div>
-          {/* <AdContainerForDesktop /> */}
+          <AdContainerForDesktop />
         </div>
         {/* <DisplayAdUnit format="auto" /> */}
-        {/* <AdContainerForMobile /> */}
+        <AdContainerForMobile />
 
         {/* Nutrition Info */}
         <div className="mx-4  p-2 sm:p-6  shadow-md border border-gray-300 flex flex-col lg:flex-row justify-between items-start lg:items-center mt-12">
@@ -352,7 +354,7 @@ const RecipePage = ({ currentPost }: any) => {
               <strong>Calcium:</strong> {recipeDetails?.nutrition?.calcium}
             </p>
           </div>
-          {/* <AdContainerForDesktop /> */}
+          <AdContainerForDesktop />
         </div>
       </div>
       <div className=" w-full flex lg:ml-6 lg:justify-start gap-4 justify-center mt-6">

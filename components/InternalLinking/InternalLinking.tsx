@@ -4,6 +4,8 @@ import Image from "next/image";
 import { shimmer, toBase64 } from "@/libs/Shimmer";
 import DeSlugify from "@/libs/DeSlugify";
 import { Poppins } from "next/font/google";
+import AdContainerForDesktop from "../Ads/AdContainerForDesktop";
+import AdContainerForMobile from "../Ads/AdContainerForMobile";
 // import AdContainerForDesktop from "../Ads/AdContainerForDesktop";
 // import AdContainerForMobile from "../Ads/AdContainerForMobile";
 
@@ -81,8 +83,8 @@ export default function InternalLinking({
           ))}
         </div>
       </div>
-      {/* <AdContainerForDesktop />
-      <AdContainerForMobile /> */}
+      <AdContainerForDesktop />
+      <AdContainerForMobile />
       {/* Category Section */}
       <div>
         <h2
@@ -126,8 +128,8 @@ export default function InternalLinking({
           ))}
         </div>
       </div>{" "}
-      {/* <AdContainerForDesktop />
-      <AdContainerForMobile /> */}
+      <AdContainerForDesktop />
+      <AdContainerForMobile />
     </div>
   );
 }
