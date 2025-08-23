@@ -6,6 +6,7 @@ import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/footer/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
+import AdsenseScript from "@/components/Ads/AdsenseScript";
 // import AnalyticsScript from "@/components/AnalyticsScript";
 // import AdsenseScript from "@/components/Ads/AdsenseScript";
 
