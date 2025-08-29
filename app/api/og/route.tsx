@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { ImageResponse } from "@vercel/og";
 import { url } from "inspector";
 import DeSlugify from "@/libs/DeSlugify";
+import { validateProxiedImage } from "@/libs/validateImage";
 // import sharp from "sharp";
 
 export const runtime = "experimental-edge";
@@ -96,6 +97,31 @@ export async function GET(req: NextRequest) {
     text: isWhiteText ? "white" : "black",
   };
 
+  // try {
+  //   await assertRenderableImage(cover); // throws on WebP/AVIF/etc.
+  // } catch (e: any) {
+  //   // Don’t render — return a clear error instead of a black image.
+  //   return json(
+  //     e.message?.includes("Unsupported") ? 415 : 502,
+  //     e.message || "Probe failed"
+  //   );
+  // }
+
+  const proxied = `${
+    process.env.NEXT_PUBLIC_BASE_API_URL
+  }/api/proxy-image?url=${encodeURIComponent(cover)}`;
+
+  console.log(`proxied cover image:`, proxied);
+
+  try {
+    await validateProxiedImage(proxied);
+  } catch (err: any) {
+    return new Response(JSON.stringify({ error: err.message }), {
+      status: 415,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   const templates = [
     (() => {
       const fullTitle = DeSlugify(title).toUpperCase();
@@ -119,7 +145,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -209,7 +235,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -334,7 +360,7 @@ export async function GET(req: NextRequest) {
           </div>
           {/* Food image */}
           <img
-            src={cover}
+            src={proxied}
             alt="dish"
             style={{
               width: "100%",
@@ -421,7 +447,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -507,7 +533,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -587,7 +613,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -682,7 +708,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -783,7 +809,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -907,7 +933,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -992,7 +1018,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -1100,7 +1126,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -1179,7 +1205,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -1258,7 +1284,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -1342,7 +1368,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -1418,7 +1444,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -1501,7 +1527,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -1572,7 +1598,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
@@ -1655,7 +1681,7 @@ export async function GET(req: NextRequest) {
         >
           {/* Top image */}
           <img
-            src={cover}
+            src={proxied}
             alt="top"
             style={{
               width: "100%",
@@ -1715,7 +1741,7 @@ export async function GET(req: NextRequest) {
 
           {/* Bottom image */}
           <img
-            src={cover}
+            src={proxied}
             alt="bottom"
             style={{
               width: "100%",
