@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL")
+}
+
+model FoodBlogs {
+  id                String   @id @default(uuid())
+  author            String
+  quote             String
+  section           String
+  subsection        String
+  subsubsection     String
+  title             String   @unique
+  slug              String   @unique
+  imageurl          String
+  imagealt          String
+  content           Json[]
+  instructions      String[]
+  recipedescription String
+  recipedetails     Json
+  seo               Json
+  faq               Json
+  equipments        String[]
+  creationDate      DateTime @default(now())
+  reviews           Json[]
+
+    @@index([section])
+  @@index([subsection])
+  @@index([subsubsection])
+  @@index([creationDate])
+}
