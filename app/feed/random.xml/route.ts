@@ -98,7 +98,7 @@ export async function GET(request: Request, response: Response) {
           contributor: [author],
           date: new Date(Date.now() - 60 * 60 * 1000), // pubDate is set to 1 hour before now
           category: [
-            { name: String(1047298157036755202) },
+            { name: "1047298157036755202" },
             { name: r.subsection },
             { name: r.subsubsection },
           ],
