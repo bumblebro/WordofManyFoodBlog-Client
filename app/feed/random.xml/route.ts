@@ -102,20 +102,14 @@ export async function GET(request: Request, response: Response) {
             { name: r.subsection },
             { name: r.subsubsection },
           ],
-          enclosure: {
+          image: {
+            type: "image/png",
             url:
               domain +
               `/api/og?title=${r.title}&amp;cover=${encodeURIComponent(
                 r.imageurl
               )}`,
-            type: "image/png",
-            length: 0,
           },
-          image:
-            domain +
-            `/api/og?title=${r.title}&amp;cover=${encodeURIComponent(
-              r.imageurl
-            )}`,
         });
       }
     });
