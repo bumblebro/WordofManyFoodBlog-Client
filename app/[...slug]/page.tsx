@@ -19,6 +19,7 @@ import DeSlugify from "@/libs/DeSlugify";
 import { notFound } from "next/navigation";
 import Navbar3 from "@/components/navbar3/page";
 import StructuredData from "@/components/StructuredData/StructuredData";
+import { redirect } from "next/navigation";
 
 interface params {
   params: {
@@ -331,7 +332,8 @@ async function BlogCategory({ params }: params) {
   const moddecodedslug = decodedslug.slice(0, 3);
 
   if (!validateCategoryPath(moddecodedslug, subSections)) {
-    return notFound();
+    // return notFound();
+    redirect("/");
   }
 
   if (decodedslug.length === 1) {
@@ -343,7 +345,8 @@ async function BlogCategory({ params }: params) {
       pageNo: page,
     });
     if (!response) {
-      return notFound();
+      // return notFound();
+      redirect("/");
     }
 
     posts = response.blogs;
@@ -359,7 +362,8 @@ async function BlogCategory({ params }: params) {
       pageNo: page,
     });
     if (!response) {
-      return notFound();
+      // return notFound();
+      redirect("/");
     }
 
     posts = response.blogs;
@@ -372,7 +376,8 @@ async function BlogCategory({ params }: params) {
       pageNo: page,
     });
     if (!response) {
-      return notFound();
+      // return notFound();
+      redirect("/");
     }
 
     posts = response.blogs;
@@ -384,7 +389,8 @@ async function BlogCategory({ params }: params) {
       title: decodedslug[decodedslug.length - 1],
     });
     if (!response) {
-      return notFound();
+      // return notFound();
+      redirect("/");
     }
 
     currentPost = response;
