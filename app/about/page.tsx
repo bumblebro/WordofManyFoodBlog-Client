@@ -124,13 +124,13 @@ function page() {
             Meet the Creator
           </h2>
 
-          <Image
+          {/* <Image
             src={imgurl}
             alt="Shreyas M S - Admin of WordofMany"
             width="200"
             height="200"
             className="my-4"
-          /> 
+          />  */}
 
           <div className="flex items-center gap-4">
             <div>
