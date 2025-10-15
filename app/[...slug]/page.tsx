@@ -40,7 +40,8 @@ type SEOType = {
   secondaryKeywords: string[];
 };
 
-export const revalidate = 86400;
+export const dynamic = 'force-dynamic';
+// export const revalidate = 86400; // remove or comment this
 
 function timeToISO8601Duration(seconds: number) {
   const units = [
@@ -68,6 +69,8 @@ function timeToISO8601Duration(seconds: number) {
 
   return duration;
 }
+
+/*
 
 export async function generateStaticParams() {
   const sluglayer = await GenerateSlugs(subSections);
@@ -114,6 +117,8 @@ export async function generateStaticParams() {
     return [];
   }
 }
+
+*/
 
 export async function generateMetadata({ params }: params): Promise<Metadata> {
   let categoryList: string[] = [];
