@@ -26,6 +26,7 @@ export async function GET(req: Request) {
   const buf = Buffer.from(await r.arrayBuffer());
   try {
     const out = await sharp(buf).png().toBuffer(); // or .jpeg()
+    //@ts-ignore
     return new Response(out, {
       status: 200,
       headers: {
