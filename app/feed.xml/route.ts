@@ -4,6 +4,7 @@ import { FoodBlogs } from "@prisma/client";
 import { Feed } from "feed";
 
 // export const revalidate = 3600; // revalidate at most every hour
+export const dynamic = "force-dynamic";
 
 const domain =
   process.env.NEXT_PUBLIC_BASE_API_URL?.replace(/^https:/, "http:") || "";
